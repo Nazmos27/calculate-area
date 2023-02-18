@@ -23,17 +23,38 @@
 //     myFunction('elipse-input-01','elipse-input-02','elipse-cm-01','elipse-cm-02')
 // })
 
-function myFunction() {
-    var x = document.getElementById("triangle-input");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+function togglingInputField(shape) {
+    var shape 
+    if (shape.style.display === "none") {
+      shape.style.display = "flex"
     } else {
-      x.style.display = "none";
+      shape.style.display = "none";
     }
   }
 
   document.getElementById('toggle-btn-triangle').addEventListener('click',function(){
-    console.log('asdf')
-    myFunction()
+    const triangleField = document.getElementById('triangle-input')
+    togglingInputField(triangleField)
   })
+  document.getElementById('toggle-btn-rhombus').addEventListener('click',function(){
+    const rhombusField = document.getElementById('rhombus-input')
+    togglingInputField(rhombusField)
+  })
+  document.getElementById('toggle-btn-rectangle').addEventListener('click',function(){
+    const rectangleField = document.getElementById('rectangle-input')
+    togglingInputField(rectangleField)
+  })
+  document.getElementById('toggle-btn-pentagon').addEventListener('click',function(){
+    const pentagonField = document.getElementById('pentagon-input')
+    togglingInputField(pentagonField)
+  })
+  document.getElementById('toggle-btn-parallelogram').addEventListener('click',function(){
+    const parallelogramField = document.getElementById('parallelogram-input')
+    togglingInputField(parallelogramField)
+  })
+  document.getElementById('toggle-btn-elipse').addEventListener('click',function(){
+    const elipseField = document.getElementById('elipse-input')
+    togglingInputField(elipseField)
+  })
+
 
