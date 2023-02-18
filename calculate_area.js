@@ -61,7 +61,9 @@ function ul(parameter, text){
 
 function showAlert(){
   const box = document.getElementById('alertbox')
-  box.style.display = "block"
+  if (box.style.display === "none") {
+    box.style.display = "block"
+  }
 }
 
 document.getElementById('calculate-triangle').addEventListener('click',function(){

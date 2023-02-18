@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,56 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <header class="h-28 w-11/12 mx-auto mt-10 text-xl rounded-md md:text-3xl bg-rose-400 text-center font-bold text-white">
-        <h1 class="pt-7" >Welcome to The Question & Answer Part</h1>
+    <header
+        class="h-28 w-11/12 mx-auto mt-10 text-xl rounded-md md:text-3xl bg-rose-400 text-center font-bold text-white">
+        <h1 class="pt-7">Welcome to The Question & Answer Part</h1>
     </header>
     <main>
         <div class="py-8 px-4  w-11/12 bg-blue-200 mx-auto mt-10 rounded-md">
             <h1 class="text-xl font-bold">What is DOM and what is the purpose of DOM?</h1>
-            <p>Answer: DOM or Document Object Model is an API(Application Programming Interface) that represents the HTML document in the form of the Tree structure such that programs can access and change the style and structure of the HTML document. The DOM object is automatically created by the web browser itself upon opening an HTML web page.
-                By manipulating the DOM, you have infinite possibilities. You can create applications that update the data of the page without needing a refresh. Also, you can create applications that are customizable by the user and then change the layout of the page without a refresh. You can drag, move, and delete elements.In website development, DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove elements from a website document. DOM manipulation is when you use JavaScript to add, remove, and modify elements of a website. It is very common in web development</p>
+            <p>Answer: DOM or Document Object Model is an API(Application Programming Interface) that represents the
+                HTML document in the form of the Tree structure such that programs can access and change the style and
+                structure of the HTML document. The DOM object is automatically created by the web browser itself upon
+                opening an HTML web page.
+                By manipulating the DOM, you have infinite possibilities. You can create applications that update the
+                data of the page without needing a refresh. Also, you can create applications that are customizable by
+                the user and then change the layout of the page without a refresh. You can drag, move, and delete
+                elements.In website development, DOM stands for Document Object Model. It is a programming interface
+                that allows us to create, change, or remove elements from a website document. DOM manipulation is when
+                you use JavaScript to add, remove, and modify elements of a website. It is very common in web
+                development</p>
         </div>
         <div class="py-8 px-4  w-11/12 bg-purple-200 mx-auto mt-10 rounded-md">
             <h1 class="text-xl font-bold">How will you select HTML elements using DOM? Name the DOM methods.</h1>
-            <p>Answer: The DOM has a lot of methods. They are the connection between our nodes (elements) and events, something that well'll learn more about later. I'm gonna show you some of the most important methods and how they're used.
+            <p>Answer: The DOM has a lot of methods. They are the connection between our nodes (elements) and events,
+                something that well'll learn more about later. I'm gonna show you some of the most important methods and
+                how they're used.
                 at first we have to write to code document. Then we have to add the id or class or tag name.
-                example : where there is a id in a HTML tag then you have to enter that id in the methods. suppose we have id named 'text' then if we need to get this id we have to write 'document.
+                example : where there is a id in a HTML tag then you have to enter that id in the methods. suppose we
+                have id named 'text' then if we need to get this id we have to write 'document.
                 getElementById('text')' to get that.
-                There are several methods avalilable such as: getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll().</p>
+                There are several methods avalilable such as: getElementById(), getElementsByClassName(),
+                getElementsByTagName(), querySelector(), querySelectorAll().</p>
         </div>
         <div class="py-8 px-4  w-11/12 bg-pink-200 mx-auto mt-10 rounded-md">
             <h1 class="text-xl font-bold">What is event bubble?</h1>
-            <p>Answer: Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element. It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.The "Event Bubbling" behavior makes it possible for you to handle an event in a parent element instead of the actual element that received the event.</p>
+            <p>Answer: Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element
+                receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent
+                and ancestor elements in the DOM tree until it gets to the root element. It happens when an element
+                receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent
+                and ancestor elements in the DOM tree until it gets to the root element.The "Event Bubbling" behavior
+                makes it possible for you to handle an event in a parent element instead of the actual element that
+                received the event.</p>
         </div>
         <div class="py-8 px-4  w-11/12 bg-green-200 mx-auto mt-10 rounded-md">
             <h1 class="text-xl font-bold">What is a callback function and why will you use it?</h1>
-            <p>Answer: In JavaScript a callback is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
-                you could call a calculator function (myCalculator), and let the calculator function call the display function (myDisplayer):
+            <p>Answer: In JavaScript a callback is a function which is to be executed after another function has
+                finished execution. A more formal definition would be - Any function that is passed as an argument to
+                another function so that it can be executed in that other function is called as a callback function.
+                you could call a calculator function (myCalculator), and let the calculator function call the display
+                function (myDisplayer):
                 function myDisplayer(some) {
                 document.
                 getElementById("demo")
@@ -43,15 +68,19 @@
                 myDisplayer(sum);
                 }
                 myCalculator(5, 5);
-                When you want one function to execute only after another function has completed its execution, we use callback functions in JavaScript. It needs to pass as a parameter to other functions to make a function callback.</p>
+                When you want one function to execute only after another function has completed its execution, we use
+                callback functions in JavaScript. It needs to pass as a parameter to other functions to make a function
+                callback.</p>
         </div>
     </main>
-    <button id="go-back" class="my-10 bg-blue-500 px-20 text-white font-semibold py-2 block mx-auto  rounded-md ">Go Back</button>
+    <button id="go-back" class="my-10 bg-blue-500 px-20 text-white font-semibold py-2 block mx-auto  rounded-md ">Go
+        Back</button>
     <script>
-        document.getElementById('go-back').addEventListener('click',function(){
+        document.getElementById('go-back').addEventListener('click', function () {
             window.location.href = 'index.html'
         })
 
     </script>
 </body>
+
 </html>
