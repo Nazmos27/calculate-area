@@ -34,9 +34,18 @@ function togglingInputField(shape) {
 
 
 
-function calculatingArea(shapevalue01,shapevalue02){
-  const area = shapevalue01 * shapevalue02
-  return area
+function calculatingArea(shapevalue01,shapevalue02,shapename){
+  if(shapename === 'triangle' || shapename === 'rhombus' || shapename === 'pentagon' || shapename === 'parallelogram'){
+    const area = shapevalue01* shapevalue02 * 0.5
+    return area.toFixed(2)
+  }else if(shapename === 'elipse'){
+    const area = 3.14 * shapevalue01 * shapevalue02
+    return area.toFixed(2)
+  }else{
+    const area = shapevalue01 * shapevalue02
+    return area.toFixed(2)
+  }
+  
 }
 
 function ul(parameter, text){
@@ -49,16 +58,42 @@ function ul(parameter, text){
   ul.appendChild(element);
 }
 
+
+function showAlert(){
+  const box = document.getElementById('alertbox')
+  box.style.display = "block"
+}
+
 document.getElementById('calculate-triangle').addEventListener('click',function(){
   const value1 = document.getElementById('triangle-input-01').value
   const value2 = document.getElementById('triangle-input-02').value
-  const triangleArea = calculatingArea(value1,value2)
-  console.log(calculatingArea(value1,value2))
-  document.getElementById('triangle-input-01').value = ''
-  document.getElementById('triangle-input-02').value = ''
-  ul(triangleArea,'triangle')
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const triangleArea = calculatingArea(value1,value2,'triangle')
+    document.getElementById('triangle-input-01').value = ''
+    document.getElementById('triangle-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul(triangleArea,'triangle')
+  }
+
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

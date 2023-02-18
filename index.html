@@ -11,6 +11,9 @@
 
 </head>
 <body>
+    <div id="alertbox" class="hidden absolute z-10 h-56 w-80 bg-gray-400 left-1/3">
+        <p>Please Enter Any Positive Number</p>
+    </div>
     <header class="py-3 flex justify-between items-center px-4 bg-blue-200 rounded-md mx-4 my-4">
         <div>
             <h1 class="text-xl md:text-2xl font-bold">Interactive</h1>
@@ -31,7 +34,7 @@
         </div>
         <div class="space-y-4 h-96 w-80 md:h-96 md:w-72 border-2 border-gray-200 mx-auto md:mx-0 rounded-md">
             <img src="./images/rhombus.png" alt="" class="h-36 w-40 mx-auto mt-6">
-            <h1 class="text-xl text-center font-bold">Rhombus</h1>
+            <h1 id="rhombus" class="text-xl text-center font-bold">Rhombus</h1>
             <p class="text-xs md:text-sm text-center">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> <i id="toggle-btn-rhombus" class="fa-regular fa-pen-to-square"></i></p>
             <div id="rhombus-input" class="flex justify-center space-x-4">
                 <input type="number" name="" id="" placeholder="  b" class="w-16 bg-slate-200 rounded-sm"><p class="rhombus-cm-01">cm</p>
@@ -41,7 +44,7 @@
         </div>
         <div class="space-y-4 h-96 w-80 md:h-96 md:w-72 border-2 border-gray-200 mx-auto md:mx-0 rounded-md">
             <img src="./images/rectangle.png" alt="" class="h-36 w-52 mx-auto mt-6">
-            <h1 class="text-xl text-center font-bold">Rectangle</h1>
+            <h1 id="rectangle" class="text-xl text-center font-bold">Rectangle</h1>
             <p class="text-xs md:text-sm text-center">Area(A) = w x l <i id="toggle-btn-rectangle" class="fa-regular fa-pen-to-square"></i></p>
             <div id="rectangle-input" class="flex justify-center space-x-4">
                 <input type="number" name="" id="" placeholder="  b" class="w-16 bg-slate-200 rounded-sm"><p class="rectangle-cm-01">cm</p>
@@ -51,7 +54,7 @@
         </div>
         <div class="space-y-4 h-96 w-80 md:h-96 md:w-72 border-2 border-gray-200 mx-auto md:mx-0 rounded-md">
             <img src="./images/pentagon.png" alt="" class="h-36 w-40 mx-auto mt-6">
-            <h1 class="text-xl text-center font-bold">Pentagon</h1>
+            <h1 id="pentagon" class="text-xl text-center font-bold">Pentagon</h1>
             <p class="text-xs md:text-sm text-center">Area(A) = 0.5 x p x b <i id="toggle-btn-pentagon" class="fa-regular fa-pen-to-square"></i></p>
             <div id="pentagon-input" class="flex justify-center space-x-4">
                 <input type="number" name="" id="" placeholder="  b" class="w-16 bg-slate-200 rounded-sm"><p class="pentagon-cm-01">cm</p>
@@ -61,7 +64,7 @@
         </div>
         <div class="space-y-4 h-96 w-80 md:h-96 md:w-72 border-2 border-gray-200 mx-auto md:mx-0 rounded-md">
             <img src="./images/parallelogram.png" alt="" class="h-36 w-40 mx-auto mt-6">
-            <h1 class="text-xl text-center font-bold">Parallelogram</h1>
+            <h1 id="parallelogram" class="text-xl text-center font-bold">Parallelogram</h1>
             <p class="text-xs md:text-sm text-center">Area(A) = 0.5 x b x h <i id="toggle-btn-parallelogram" class="fa-regular fa-pen-to-square"></i></p>
             <div id="parallelogram-input" class="flex justify-center space-x-4">
                 <input type="number" name="" id="" placeholder="  b" class="w-16 bg-slate-200 rounded-sm"><p class="parallelogram-cm-01">cm</p>
@@ -71,7 +74,7 @@
         </div>
         <div class="space-y-4 h-96 w-80 md:h-96 md:w-72 border-2 border-gray-200 mx-auto md:mx-0 rounded-md">
             <img src="./images/ellipse.png" alt="" class="h-28  w-40 mx-auto my-8">
-            <h1 class="text-xl text-center font-bold">Elipse</h1>
+            <h1 id="elipse" class="text-xl text-center font-bold">Elipse</h1>
             <p class="text-xs md:text-sm text-center">Area(A) = &#960ab <i id="toggle-btn-elipse" class="fa-regular fa-pen-to-square"></i></p>
             <div id="elipse-input" class="flex justify-center space-x-4">
                 <input type="number" name="" id="" placeholder="  b" class="w-16 bg-slate-200 rounded-sm"><p id="elipse-cm-02">cm</p>
