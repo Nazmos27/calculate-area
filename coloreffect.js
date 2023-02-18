@@ -23,6 +23,8 @@ document.getElementById('card05').addEventListener('mouseenter', function(){
 document.getElementById('card06').addEventListener('mouseenter', function(){
     document.getElementById('card06').style.backgroundColor = random();
 })
-document.getElementById('pentagon').addEventListener('mouseenter', function(){
-    document.getElementById('pentagon').style.backgroundColor = random();
-})
+
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href = 'QnA.html'
+  })
