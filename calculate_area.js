@@ -78,9 +78,98 @@ document.getElementById('calculate-triangle').addEventListener('click',function(
     })
     ul(triangleArea,'triangle')
   }
-
-
 })
+document.getElementById('calculate-rhombus').addEventListener('click',function(){
+  const value1 = document.getElementById('rhombus-input-01').value
+  const value2 = document.getElementById('rhombus-input-02').value
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const rhombusArea = calculatingArea(value1,value2,'rhombus')
+    document.getElementById('rhombus-input-01').value = ''
+    document.getElementById('rhombus-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul(rhombusArea,'rhombus')
+  }
+})
+document.getElementById('calculate-rectangle').addEventListener('click',function(){
+  const value1 = document.getElementById(' rhombus-input-01').value
+  const value2 = document.getElementById(' rhombus-input-02').value
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const  rhombusArea = calculatingArea(value1,value2,' rhombus')
+    document.getElementById(' rhombus-input-01').value = ''
+    document.getElementById(' rhombus-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul( rhombusArea,' rhombus')
+  }
+})
+document.getElementById('calculate-rectangle').addEventListener('click',function(){
+  const value1 = document.getElementById('rectangle-input-01').value
+  const value2 = document.getElementById('rectangle-input-02').value
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const rectangleArea = calculatingArea(value1,value2,'rectangle')
+    document.getElementById('rectangle-input-01').value = ''
+    document.getElementById('rectangle-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul(rectangleArea,'rectangle')
+  }
+})
+document.getElementById('calculate-pentagon').addEventListener('click',function(){
+  const value1 = document.getElementById('pentagon-input-01').value
+  const value2 = document.getElementById('pentagon-input-02').value
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const pentagonArea = calculatingArea(value1,value2,'pentagon')
+    document.getElementById('pentagon-input-01').value = ''
+    document.getElementById('pentagon-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul(pentagonArea,'pentagon')
+  }
+})
+document.getElementById('calculate-parallelogram').addEventListener('click',function(){
+  const value1 = document.getElementById('parallelogram-input-01').value
+  const value2 = document.getElementById('parallelogram-input-02').value
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const parallelogramArea = calculatingArea(value1,value2,'parallelogram')
+    document.getElementById('parallelogram-input-01').value = ''
+    document.getElementById('parallelogram-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul(parallelogramArea,'parallelogram')
+  }
+})
+document.getElementById('calculate-elipse').addEventListener('click',function(){
+  const value1 = document.getElementById('elipse-input-01').value
+  const value2 = document.getElementById('elipse-input-02').value
+  if(isNaN(value1) || isNaN(value2) || value1 <= 0 || value2 <= 0){
+    showAlert()
+  }else{
+    const elipseArea = calculatingArea(value1,value2,'elipse')
+    document.getElementById('elipse-input-01').value = ''
+    document.getElementById('elipse-input-02').value = ''
+    document.getElementById('list-container').addEventListener('click',function(event){
+      event.target.parentNode.removeChild(event.target)
+    })
+    ul(elipseArea,'elipse')
+  }
+})
+
 
 
 
