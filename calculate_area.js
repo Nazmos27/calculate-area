@@ -32,6 +32,36 @@ function togglingInputField(shape) {
     }
   }
 
+
+
+function calculatingArea(shapevalue01,shapevalue02){
+  const area = shapevalue01 * shapevalue02
+  return area
+}
+
+function ul(parameter, text){
+  const ul = document.getElementById('list-container');
+  const element = document.createElement('li');
+  const textdocument = document.getElementById(text).innerText;
+  element.innerHTML = `
+  <p> ${textdocument} ${parameter}cm<sup>2</sup> <button class="btn-convert text-white font-bold mt-2 bg-blue-700 px-1 rounded-md">convert to m<sup>2</sup></button></p>
+  `;
+  ul.appendChild(element);
+}
+
+document.getElementById('calculate-triangle').addEventListener('click',function(){
+  const value1 = document.getElementById('triangle-input-01').value
+  const value2 = document.getElementById('triangle-input-02').value
+  const triangleArea = calculatingArea(value1,value2)
+  console.log(calculatingArea(value1,value2))
+  document.getElementById('triangle-input-01').value = ''
+  document.getElementById('triangle-input-02').value = ''
+  ul(triangleArea,'triangle')
+
+})
+
+
+
   document.getElementById('toggle-btn-triangle').addEventListener('click',function(){
     const triangleField = document.getElementById('triangle-input')
     togglingInputField(triangleField)
